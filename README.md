@@ -13,12 +13,19 @@ Proyecto_Emociones/
 │   └── Dataset_Emociones_Limpio.csv             # Dataset preprocesado y etiquetado
 │
 ├── notebooks/
-│   ├── Proyecto.ipynb
+│   ├── 01_EDA_Preprocesamiento.ipynb            # Análisis exploratorio de datos y limpieza
+│   ├── 02_Modelos_Tradicionales.ipynb           # Implementación de SVM, KNN, NB, RF con TF-IDF
+│   ├── 03_Transformers_BETO_RoBERTuito.ipynb    # Fine-tuning y predicción usando BETO y RoBERTuito
+│   ├── 04_Embeddings_y_Clasificación.ipynb      # Extracción de embeddings + ML tradicionales
+│   └── 05_Modelo_MarIA.ipynb                     # Entrenamiento del modelo MarIA
 │
 ├── results/
 │   ├── figuras/                                 # Gráficas comparativas generadas
 │   ├── metrics/                                 # Reportes de clasificación y métricas por modelo
 │   └── tablas/                                  # Tablas resumen para el documento
+│
+├── models/
+│   └── transformers_checkpoints/                # Pesos y logs de modelos fine-tuneados
 │
 ├── utils/
 │   └── preprocessing.py                         # Funciones auxiliares para limpieza y tokenización
@@ -47,22 +54,33 @@ O bien desde Google Colab:
 - **Transformers:** BETO, RoBERTuito, MarIA
 - **Embeddings:** Extraídos desde Transformers para modelos clásicos
 
+
 ## 🚀 Ejecución del Proyecto
 
-1. **Preprocesamiento de Datos:** Ejecuta `01_EDA_Preprocesamiento.ipynb`
-2. **Modelos Tradicionales:** Corre `02_Modelos_Tradicionales.ipynb` para TF-IDF + SVM, NB, etc.
-3. **Modelos Transformers:** Usa `03_Transformers_BETO_RoBERTuito.ipynb`
-4. **Embeddings + ML Tradicional:** Ejecuta `04_Embeddings_y_Clasificación.ipynb`
-5. **Modelo MarIA:** Corre `05_Modelo_MarIA.ipynb`
+Todo el flujo de trabajo se encuentra consolidado en el archivo:
 
-## 🧠 Reproducción de Resultados
+```
+Proyecto.ipynb
+```
 
-Cada notebook está dividido en secciones explicativas. Para reproducir los resultados:
+Este cuaderno contiene de forma secuencial y documentada todas las etapas del análisis, desde la carga y limpieza de datos, hasta la evaluación de modelos tradicionales y modelos basados en transformers.
 
-- Cargar correctamente el dataset limpio (`Dataset_Emociones_Limpio.csv`) en la carpeta `data/`.
-- Asegurarte de que las clases estén correctamente etiquetadas.
-- Verifica que el entorno tenga los paquetes adecuados instalados.
-- Se recomienda usar Google Colab para acceder a aceleradores como GPU.
+### Etapas incluidas en el notebook:
+
+1. **Análisis Exploratorio de Datos (EDA)**
+2. **Preprocesamiento de texto para modelos tradicionales**
+3. **Vectorización con TF-IDF**
+4. **Entrenamiento y evaluación de modelos clásicos (SVM, NB, RF, KNN)**
+5. **Fine-tuning de modelos transformers (BETO, RoBERTuito, MarIA)**
+6. **Extracción de embeddings y clasificación con ML tradicional**
+7. **Comparación de resultados y visualizaciones**
+
+### Para ejecutarlo correctamente:
+
+- Asegúrate de tener el archivo `Dataset_Emociones_Limpio.csv` cargado en la misma ruta del notebook o en `/content/drive/MyDrive/Practica7/`.
+- Usa **Google Colab** si deseas aprovechar GPU para entrenamiento con transformers.
+- Verifica que se hayan instalado las dependencias listadas en `requirements.txt`.
+
 
 ## 📊 Salidas Esperadas
 
