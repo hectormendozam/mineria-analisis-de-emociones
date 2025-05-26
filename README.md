@@ -6,26 +6,19 @@ Este proyecto tiene como objetivo desarrollar y comparar distintos modelos de cl
 ## 📁 Estructura del Proyecto
 
 ```
-Proyecto_Emociones/
+mineria-analisis-de-emociones/
 │
 ├── data/
 │   ├── Nuevo_Dataset_Patrones_Emocionales.csv   # Dataset original crudo
 │   └── Dataset_Emociones_Limpio.csv             # Dataset preprocesado y etiquetado
 │
 ├── notebooks/
-│   ├── 01_EDA_Preprocesamiento.ipynb            # Análisis exploratorio de datos y limpieza
-│   ├── 02_Modelos_Tradicionales.ipynb           # Implementación de SVM, KNN, NB, RF con TF-IDF
-│   ├── 03_Transformers_BETO_RoBERTuito.ipynb    # Fine-tuning y predicción usando BETO y RoBERTuito
-│   ├── 04_Embeddings_y_Clasificación.ipynb      # Extracción de embeddings + ML tradicionales
-│   └── 05_Modelo_MarIA.ipynb                     # Entrenamiento del modelo MarIA
+│   ├── Proyecto.ipynb                          # Notebook con todo el contenido de Python
 │
 ├── results/
 │   ├── figuras/                                 # Gráficas comparativas generadas
 │   ├── metrics/                                 # Reportes de clasificación y métricas por modelo
 │   └── tablas/                                  # Tablas resumen para el documento
-│
-├── models/
-│   └── transformers_checkpoints/                # Pesos y logs de modelos fine-tuneados
 │
 ├── utils/
 │   └── preprocessing.py                         # Funciones auxiliares para limpieza y tokenización
@@ -77,7 +70,7 @@ Este cuaderno contiene de forma secuencial y documentada todas las etapas del an
 
 ### Para ejecutarlo correctamente:
 
-- Asegúrate de tener el archivo `Dataset_Emociones_Limpio.csv` cargado en la misma ruta del notebook o en `/content/drive/MyDrive/Practica7/`.
+- Asegúrate de tener el archivo `Dataset_Emociones_Limpio.csv` cargado en la misma ruta del notebook o en `/content/drive/MyDrive/...`.
 - Usa **Google Colab** si deseas aprovechar GPU para entrenamiento con transformers.
 - Verifica que se hayan instalado las dependencias listadas en `requirements.txt`.
 
