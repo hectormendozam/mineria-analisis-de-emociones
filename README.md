@@ -13,19 +13,12 @@ Proyecto_Emociones/
 │   └── Dataset_Emociones_Limpio.csv             # Dataset preprocesado y etiquetado
 │
 ├── notebooks/
-│   ├── 01_EDA_Preprocesamiento.ipynb            # Análisis exploratorio de datos y limpieza
-│   ├── 02_Modelos_Tradicionales.ipynb           # Implementación de SVM, KNN, NB, RF con TF-IDF
-│   ├── 03_Transformers_BETO_RoBERTuito.ipynb    # Fine-tuning y predicción usando BETO y RoBERTuito
-│   ├── 04_Embeddings_y_Clasificación.ipynb      # Extracción de embeddings + ML tradicionales
-│   └── 05_Modelo_MarIA.ipynb                     # Entrenamiento del modelo MarIA
+│   ├── Proyecto.ipynb
 │
 ├── results/
 │   ├── figuras/                                 # Gráficas comparativas generadas
 │   ├── metrics/                                 # Reportes de clasificación y métricas por modelo
 │   └── tablas/                                  # Tablas resumen para el documento
-│
-├── models/
-│   └── transformers_checkpoints/                # Pesos y logs de modelos fine-tuneados
 │
 ├── utils/
 │   └── preprocessing.py                         # Funciones auxiliares para limpieza y tokenización
