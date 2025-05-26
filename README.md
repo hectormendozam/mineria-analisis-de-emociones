@@ -38,7 +38,7 @@ pip install -r requirements.txt
 O bien desde Google Colab:
 
 ```python
-!pip install -q transformers==4.30.2 datasets scikit-learn nltk wordcloud
+!pip install -q transformers==4.39.0 datasets scikit-learn nltk wordcloud
 ```
 
 ## 📌 Modelos Comparados
